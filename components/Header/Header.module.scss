@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background);
+  color: var(--foreground);
+  border-bottom: 1px solid #242545;
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .backButton {
+      background: none;
+      border: none;
+      color: var(--foreground);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .balanceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .balanceLabel {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-weight: 500;
+    color: #82829c;
+  }
+
+  .balanceAmount {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

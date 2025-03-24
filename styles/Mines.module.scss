@@ -1,0 +1,90 @@
+.main {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.gameBoard {
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #373e65;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.tile {
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.active {
+  background-color: #242545;
+  border-bottom: 1px solid #373e65;
+  border-right: 1px solid #373e65;
+}
+
+.gem {
+  background-color: #16a34a33;
+}
+
+.bomb {
+  background-color: #dc262633;
+}
+
+.iconWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.restart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  padding: 0 1rem;
+}
+
+.restartButton {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  background-color: #f59e0b;
+  color: #fff;
+
+  &:disabled {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #a1a1aa;
+    cursor: not-allowed;
+  }
+}

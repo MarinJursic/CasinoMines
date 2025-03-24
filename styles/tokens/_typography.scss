@@ -1,0 +1,40 @@
+:root {
+  /* Base font size */
+  --font-size-base: 14px;
+
+  /* Type scale (Minor Third 1.2) */
+  --font-size-xs: 12px; // 14 / 1.2
+  --font-size-sm: 14px; // base
+  --font-size-md: 16px; // 14 * 1.2
+  --font-size-lg: 20px; // ~16 * 1.2
+  --font-size-xl: 24px; // ~20 * 1.2
+  --font-size-2xl: 29px; // ~24 * 1.2
+  --font-size-3xl: 35px; // ~29 * 1.2
+
+  /* Headings (custom if needed) */
+  --font-size-h1: 32px;
+  --line-height-h1: 42px;
+
+  --font-size-h2: 28px;
+  --line-height-h2: 36px;
+
+  --font-size-h3: 24px;
+  --line-height-h3: 32px;
+
+  --font-size-h4: 20px;
+  --line-height-h4: 26px;
+
+  --font-size-h5: 16px;
+  --line-height-h5: 22px;
+
+  --font-size-body: 14px;
+  --line-height-body: 18px;
+
+  --font-size-subtext: 12px;
+  --line-height-subtext: 16px;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
